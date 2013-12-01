@@ -1,8 +1,7 @@
 Metro design
 ============
 Screen shots:
-http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro_zps4323bb96.png
-http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro2_zpsa28af400.png
+http://myteenatanwit.github.io/CssMetro
 
 Metro source.
 The idea of Metro is it comes in boxes, many colors, has a big logo, or big text. It runs on timer for animation like text scroll up, left, right etc... and finally, it scrolls horizontal like in Win8 shell. 
