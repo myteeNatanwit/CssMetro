@@ -1,0 +1,86 @@
+@font-face { font-family: Century; src: url('GOTHIC.ttf'); }
+  
+body{
+    margin: 0;
+    padding:0;
+    font-family: Century;
+   
+}
+  
+.paging{
+    width:auto;
+    height:auto;    
+}
+  
+.vgroup{
+    width:auto;
+    padding:5px;
+    height:auto;
+    display:table;     
+}
+
+.vset1{
+    background:DarkGoldenRod ;
+}
+  
+.vset2{
+    background:Olive; 
+    
+}
+  
+.vset3{
+    background:#4682B4;
+}
+  
+.vset4{
+    background-color: SaddleBrown  ;
+}
+
+.tile:hover{
+  opacity:1;
+}
+
+.tile{
+    height:110px;  
+    width:110px; 
+    float:left;
+    margin:5;
+    padding:5px;
+    opacity:0.8;
+    text-align:left;
+    color:white;
+    //background:rgba(0,0,0,0.5);    
+    font-size: 1.4em;
+    font:normal;
+    overflow: hidden;
+    position:relative;   
+}
+  
+.x2{
+   width:210px;
+   }
+.x4{
+   height:210px;  
+   width: 210px; 
+}
+
+.textup div:nth-child(2) {
+  top: 100%
+}
+
+.textup:hover div {
+  -webkit-ttransition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%)
+  
+}
+
+.ic64{
+  position:absolute;
+  height: 64px; width: 64px; 
+  right:0;
+  bottom:0;
+}
