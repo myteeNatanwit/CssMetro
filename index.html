@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Cssmetro</title>
+  <meta name="description" content="Metro Win8 style with Css only">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Cssmetro</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Metro Win8 style with Css only</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/myteeNatanwit/CssMetro/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/myteeNatanwit/CssMetro/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/myteeNatanwit/CssMetro" class="code">View Cssmetro on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="metro-design" class="anchor" href="#metro-design"><span class="octicon octicon-link"></span></a>Metro design</h1>
+
+<p><img src="http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro_zps4323bb96.png" alt="http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro_zps4323bb96.png"><img src="http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro2_zpsa28af400.png" alt="http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro2_zpsa28af400.png">
+Screen shots:
+<a href="http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro_zps4323bb96.png">http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro_zps4323bb96.png</a>
+<a href="http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro2_zpsa28af400.png">http://i1363.photobucket.com/albums/r708/MyteeNathanwit/screenshot/metro2_zpsa28af400.png</a></p>
+
+<p>Metro source.
+The idea of Metro is it comes in boxes, many colors, has a big logo, or big text. It runs on timer for animation like text scroll up, left, right etc... and finally, it scrolls horizontal like in Win8 shell. 
+The metro is used in one of big project, together with other samples I submitted, you can put them together as in screen shots to form the UI project.</p>
+
+<h1>
+<a name="the-idea" class="anchor" href="#the-idea"><span class="octicon octicon-link"></span></a>The idea</h1>
+
+<p>When a programmer come across a web page, or an mobile app,  he right away works out in his mind "how this is done". That is the idea when we look at Metreo style of Win8. The source code is not well documented. Infact, it is not document at all for 2 reasons: 1- It is presented as plug in template, very easy to use. 2- Very simple Css code, user can always experiment with the template by playing with the Index.html file and related css. </p>
+
+<p>I must admit, I dont read user manual or instruction often, I play with the code. Rekon it helps better.</p>
+
+<h1>
+<a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>Css</h1>
+
+<p>The css file is metro.css. </p>
+
+<p>There are many ways to get the effect. However, I prefer Css as my works always form the reusable templates. Css template is best for the reusable purpose.</p>
+
+<p>1- We need to make a few tile classes that carry on the inheritance down to save the coding. title -&gt; 2x -&gt; 4x -&gt; thin -&gt; flat etc. For the project that this code designed, the tiles are transparent to see thru the video or image background. For demonstation purpose, we load an image to body background to see the hover n animation effect.</p>
+
+<p>2- The horizontal div -vgroup- acts as a table helps for responsive design. Same screen can have several groups. If you resize the screen, the tiles will re-arrange to the new width.</p>
+
+<p>3- 4 groups of tile color -vset 1 to 4- required as well as various type of icons. Color code/name is from <a href="http://www.w3schools.com/cssref/css_colornames.asp">http://www.w3schools.com/cssref/css_colornames.asp</a>. Each Vgroup is assigned with different color set and layout.
+I download the 64px icon set from <a href="http://dryicons.com/free-icons">http://dryicons.com/free-icons</a> png format in different sets of size.
+I use <a href="http://css.spritegen.com">http://css.spritegen.com</a> to make the sprites and css.
+I make a wrapper to move the sprite class around. The trick is the parent box position must be relative, and the child sprite must be position:absolute.</p>
+
+<p>4- Animation is for experiment as I am not confident about the cost of performance for the timer running in background. The Metro prototype I did submit to the project manager didnt have timer anyway.</p>
+
+<p>5- The paging is for later step of sliding pages, it is for now only acting as a container, margin-top:120px, located right under the header.</p>
+
+<p>6- There are style difined in the index.html, mainly for demonstration purpose. In your work, you dont have to keep any of them.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/myteeNatanwit" class="avatar"><img src="https://1.gravatar.com/avatar/f0f39962c046684f9448e41fd931cd3e?d=https%3A%2F%2Fidenticons.github.com%2F231a195486a523101c3eac7b8337394c.png&amp;r=x&amp;s=60" width="48" height="48"/></a> <a href="https://github.com/myteeNatanwit">myteeNatanwit</a> maintains <a href="https://github.com/myteeNatanwit/CssMetro">Cssmetro</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/myteeNatanwit/CssMetro/tarball/master" class="tar">tar</a><a href="https://github.com/myteeNatanwit/CssMetro/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
